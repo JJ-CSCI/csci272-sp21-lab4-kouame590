@@ -8,6 +8,15 @@ using Catch::Matchers::Equals;
 
 // Fix the following class
 class Complex {
+  private :
+  double m_a{};
+  double m_b{};
+  Complex(double a =0.00, double b=0.00):m_a{a},m_b{b}{ }
+
+  friend std::basic_string & operator << std::basic_string &out,const complex & complex;
+  out <<"<a>±<b>i;
+  return out};
+int main();
     void operator>>(std::string&) const;
     void operator<<(const std::string&);
 };
